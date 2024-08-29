@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(#2a00b7, #42006c);
+    font-family: 'Poppins', sans-serif;
+    color: #fff; 
+}
+
+/* Contenedor de la lista de tareas */
+.todo-container {
+    padding: 20px;
+    width: 320px;
+
+}
+
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de la entrada */
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    width: 320px;
+    border-radius: 10px;
+}
+
+/* Input de texto */
+input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+    border: none;
+    color: #333;
+    background-color: #e2e2e2;
+    font-size: 15px;
+}
+
+/* Botón para añadir tareas */
+button {
+    padding: 10px 15px;
+    background: #4c00b4;
+    color: #fff;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Lista de tareas */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    padding: 20px;
+    width: 320px;
+    border-radius: 10px;
+}
+
+/* Elementos de la lista */
+li {
+    background: #e2e2e2;
+    padding: 8px 12px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    color: #000;
+}
+
+/* Checkbox estilo redondo */
+li input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #2a00b7;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+li input[type="checkbox"]:checked {
+    background-color: #2a00b7;
+    border-color: #2a00b7;
+}
+
+li input[type="checkbox"]:checked::after {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: white;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    font-size: 12px;
+}
+
+/* Tarea completada */
+li.completed {
+    text-decoration: line-through;
+    background-color: #f0f0f0e1;
+    color: #888;
+}
+
+/* Icono de eliminar tarea */
+.fa-trash {
+    color: #4c00b4;
+    cursor: pointer;
+}
+
+.fa-trash:hover {
+    opacity: 0.9;
+}
