@@ -98,6 +98,7 @@ li input[type="checkbox"] {
     cursor: pointer;
 }
 
+
 li input[type="checkbox"]:checked {
     background-color: #2a00b7;
     border-color: #2a00b7;
